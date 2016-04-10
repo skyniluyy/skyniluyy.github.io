@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Lanyue's Blog]]></title>
-  <link href="http://skyniluyy.github.io/atom.xml" rel="self"/>
-  <link href="http://skyniluyy.github.io/"/>
-  <updated>2016-04-10T19:36:13+08:00</updated>
-  <id>http://skyniluyy.github.io/</id>
+  <title><![CDATA[My Octopress Blog]]></title>
+  <link href="http://yoursite.com/atom.xml" rel="self"/>
+  <link href="http://yoursite.com/"/>
+  <updated>2016-04-10T19:38:41+08:00</updated>
+  <id>http://yoursite.com/</id>
   <author>
-    <name><![CDATA[lanyue]]></name>
+    <name><![CDATA[Your Name]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
@@ -15,18 +15,18 @@
   
   <entry>
     <title type="html"><![CDATA[Test]]></title>
-    <link href="http://skyniluyy.github.io/blog/2016/04/10/test/"/>
+    <link href="http://yoursite.com/blog/2016/04/10/test/"/>
     <updated>2016-04-10T17:30:51+08:00</updated>
-    <id>http://skyniluyy.github.io/blog/2016/04/10/test</id>
+    <id>http://yoursite.com/blog/2016/04/10/test</id>
     <content type="html"><![CDATA[<p>This is a test.</p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[我的第一篇Octoperss博客]]></title>
-    <link href="http://skyniluyy.github.io/blog/2016/04/10/helloworld/"/>
+    <link href="http://yoursite.com/blog/2016/04/10/helloworld/"/>
     <updated>2016-04-10T16:05:42+08:00</updated>
-    <id>http://skyniluyy.github.io/blog/2016/04/10/helloworld</id>
+    <id>http://yoursite.com/blog/2016/04/10/helloworld</id>
     <content type="html"><![CDATA[<p>This is my first article!</p>
 ]]></content>
   </entry>
