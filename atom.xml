@@ -4,7 +4,7 @@
   <title><![CDATA[Lanyue's Blog]]></title>
   <link href="http://skyniluyy.github.io/atom.xml" rel="self"/>
   <link href="http://skyniluyy.github.io/"/>
-  <updated>2016-04-10T20:11:08+08:00</updated>
+  <updated>2016-04-10T20:12:37+08:00</updated>
   <id>http://skyniluyy.github.io/</id>
   <author>
     <name><![CDATA[lanyue]]></name>
@@ -24,6 +24,9 @@
 
 <p>欢迎加入 <a href="http://7xj5dz.com1.z0.glb.clouddn.com/qun.png">翻译小组</a></p>
 
+<!--more-->
+
+
 <hr />
 
 <p><img src="http://sebastien-han.fr/images/ceph-blue-store.jpg" alt="" /></p>
@@ -33,9 +36,6 @@
 <p>正如以前文章中提到的那样，关于Ceph的技术正在突飞猛进的发展，尤其是有关存储优化的技术更是如此。早在今年初，一个代号为<strong>NewStore</strong>首创项目被启动。那么它究竟是什么呢？</p>
 
 <p>NewStore项目是一种存储实现。它使用<a href="http://rocksdb.org/">RocksDB</a>存储Ceph日志，同时Ceph的真正数据对象存储在文件系统中。如今有了BlueStore技术，数据对象可以无需任何文件系统的接口而直接存储在物理块设备上。</p>
-
-<!--more-->
-
 
 <hr />
 
