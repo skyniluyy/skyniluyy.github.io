@@ -1,94 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
 
-<!DOCTYPE html>
-<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
-<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
-<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <title>Lanyue's Blog</title>
-  <meta name="author" content="lanyue">
-
-  
-  <meta name="description" content="for llanyue">
-  <meta name="keywords" content="PM,IT">
-
-  <!-- http://t.co/dKP3o1e -->
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  
-  <link rel="canonical" href="http://skyniluyy.github.io/">
-  <link href="/favicon.png" rel="icon">
-  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/atom.xml" rel="alternate" title="Lanyue's Blog" type="application/atom+xml">
-  <script src="/javascripts/modernizr-2.0.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script>!window.jQuery && document.write(unescape('%3Cscript src="/javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
-  <script src="/javascripts/octopress.js" type="text/javascript"></script>
-  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-
-  
-
-</head>
-
-<body   >
-  <header role="banner"><hgroup>
-  <h1><a href="/">Lanyue's Blog</a></h1>
-  
-    <h2>An excellent production manager.</h2>
-  
-</hgroup>
-
-</header>
-  <nav role="navigation"><ul class="subscription" data-subscription="rss">
-  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
-  
-</ul>
-  
-<form action="https://www.google.com/search" method="get">
-  <fieldset role="search">
-    <input type="hidden" name="sitesearch" value="skyniluyy.github.io">
-    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
-  </fieldset>
-</form>
-  
-<ul class="main-navigation">
-  <li><a href="/">Blog</a></li>
-  <li><a href="/blog/archives">Archives</a></li>
-  <li><a href="/about">About Me</a></li>
-</ul>
-
-</nav>
-  <div id="main">
-    <div id="content">
-      <div class="blog-index">
-  
-  
-  
-    <article>
-      
-  <header>
+  <title><![CDATA[Category: Ceph | Lanyue's Blog]]></title>
+  <link href="http://skyniluyy.github.io/blog/categories/ceph/atom.xml" rel="self"/>
+  <link href="http://skyniluyy.github.io/"/>
+  <updated>2016-04-10T20:09:27+08:00</updated>
+  <id>http://skyniluyy.github.io/</id>
+  <author>
+    <name><![CDATA[lanyue]]></name>
     
-      <h1 class="entry-title"><a href="/blog/2016/04/10/ceph-a-new-store-is-coming/">Ceph Jewel 功能预览 : 即将到来的新存储BlueStore</a></h1>
-    
-    
-      <p class="meta">
-        
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
 
-
-
-
-<time class='entry-date' datetime='2016-04-10T20:06:32+08:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>10</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>8:06 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h2>Ceph Jewel 功能预览 : 即将到来的新存储BlueStore</h2>
+  
+  <entry>
+    <title type="html"><![CDATA[Ceph Jewel 功能预览 : 即将到来的新存储BlueStore]]></title>
+    <link href="http://skyniluyy.github.io/blog/2016/04/10/ceph-a-new-store-is-coming/"/>
+    <updated>2016-04-10T20:06:32+08:00</updated>
+    <id>http://skyniluyy.github.io/blog/2016/04/10/ceph-a-new-store-is-coming</id>
+    <content type="html"><![CDATA[<h2>Ceph Jewel 功能预览 : 即将到来的新存储BlueStore</h2>
 
 <p><em>本文由 Ceph中国社区-文殊 翻译，校稿 。</em></p>
 
@@ -182,145 +112,7 @@
 
 
 <blockquote><p><em>Ceph Jewel版本一经发布，我们就可以使用Ceph中的BlueStore。 如果我没有搞错的话，BlueStore虽然可用但它是个技术预览版本，我无法肯定我们是否应该在生产环境中使用。为了确认这件事还请仔细阅读它的发布日志。 正如我们所看到的，Ceph在存储驱动方面投入了越来越多的精力。BlueStore使用RocksDB存储日志从而不再需要预写式日志。我还没有对BlueStore做任何基准测试，但是我们定将不再需要专门的存储设备来存储日志。这对于数据中心的管理角度来看无疑极具吸引力。每一个OSD都是独立的，因此它可以由一个服务器上非常简单的迁移到另一个服务器上并可顺利运行。这个特性并不新鲜，如果我没有记错的话，这个特性是在Ceph的Firefly版本在udev系统规则下就被引入的，简单来说，就是当你热插拔系统中的一个新的包含一个OSD的硬盘时，这将触发一个udev事件，该事件将会激活这个OSD。考虑到无需使用专门的设备存储Ceph的日志，依据你的集群的不同目标BlueStore在不同程度上增强了这个特性。无论在同样的存储设备上运行什么，BlueStore的性能至少对成本容量比和吞吐量优化足够。</em></p></blockquote>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2016/04/10/test/">Test</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2016-04-10T17:30:51+08:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>10</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>5:30 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>This is a test.</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2016/04/10/helloworld/">我的第一篇Octoperss博客</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2016-04-10T16:05:42+08:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>10</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>4:05 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>This is my first article!</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
-</div>
-<aside class="sidebar">
-  
-    <section>
-  <h1>Recent Posts</h1>
-  <ul id="recent_posts">
-    
-      <li class="post">
-        <a href="/blog/2016/04/10/ceph-a-new-store-is-coming/">Ceph Jewel 功能预览 : 即将到来的新存储BlueStore</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2016/04/10/test/">Test</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2016/04/10/helloworld/">我的第一篇Octoperss博客</a>
-      </li>
-    
-  </ul>
-</section>
-
-
-
-
-<section> 
-  <h1>Categories</h1> 
-  <ul id="categories"> 
-    <li class='category'><a href='/blog/categories/ceph/'>ceph (1)</a></li>
-<li class='category'><a href='/blog/categories/test/'>test (2)</a></li>
- 
-  </ul> 
-</section><section>
-  <h1>About Me</h1>
-  <p>An excellent Production Manager</p>
-</section>
-
-  
-</aside>
-
-    </div>
-  </div>
-  <footer role="contentinfo"><p>
-  Copyright &copy; 2016 - lanyue -
-  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
-</p>
-
-</footer>
-  
-
-
-
-
-
-
-
-  <script type="text/javascript">
-    (function(){
-      var twitterWidgets = document.createElement('script');
-      twitterWidgets.type = 'text/javascript';
-      twitterWidgets.async = true;
-      twitterWidgets.src = '//platform.twitter.com/widgets.js';
-      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
-    })();
-  </script>
-
-
-
-
-
-</body>
-</html>
+</feed>
