@@ -4,7 +4,7 @@
   <title><![CDATA[Lanyue's Blog]]></title>
   <link href="http://skyniluyy.github.io/atom.xml" rel="self"/>
   <link href="http://skyniluyy.github.io/"/>
-  <updated>2016-04-10T20:50:44+08:00</updated>
+  <updated>2016-04-10T22:40:32+08:00</updated>
   <id>http://skyniluyy.github.io/</id>
   <author>
     <name><![CDATA[lanyue]]></name>
@@ -121,7 +121,8 @@
     <link href="http://skyniluyy.github.io/blog/2016/04/10/test/"/>
     <updated>2016-04-10T17:30:51+08:00</updated>
     <id>http://skyniluyy.github.io/blog/2016/04/10/test</id>
-    <content type="html"><![CDATA[<p>This is a test.</p>
+    <content type="html"><![CDATA[<p>This is a test.
+for test.</p>
 ]]></content>
   </entry>
   
